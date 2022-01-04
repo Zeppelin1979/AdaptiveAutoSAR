@@ -34,6 +34,13 @@ namespace ara
                 CryptoTransform mTransform;
 
             public:
+
+                /**
+                 * @brief [SWS_CRYPT_20101]
+                 * Unique smart pointer of the interface.
+                 */
+                using Uptr = std::unique_ptr<AuthCipherCtx>;
+
                 /**
                  * @brief [SWS_CRYPT_20319]
                  * Check the calculated digest against an expected "signature" object. Entire digest value is kept

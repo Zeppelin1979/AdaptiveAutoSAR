@@ -19,6 +19,12 @@ namespace ara
             public:
                 
                 /**
+                 * @brief [SWS_CRYPT_22501]
+                 * Unique smart pointer of the interface.
+                 */
+                using Uptrc = std::unique_ptr<const PrivateKey>;
+
+                /**
                  * @brief [SWS_CRYPT_22503]
                  * Static mapping of this interface to specific value of CryptoObjectType enumeration.
                  */

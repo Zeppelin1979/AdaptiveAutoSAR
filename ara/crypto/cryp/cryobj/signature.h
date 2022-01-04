@@ -19,7 +19,29 @@ namespace ara
              */
             class Signature : public ara::crypto::CryptoObject
             {
+            public:
+
+                /**
+                 * @brief [SWS_CRYPT_23301]
+                 * Unique smart pointer of the interface.
+                 */
+                using Uptrc = std::unique_ptr<const Signature>;
+
                 static const CryptoObjectType kObjectType = CryptoObjectType::kSignature;
+
+                /**
+                 * @brief [SWS_CRYPT_23311]
+                 * Get an ID of hash algorithm used for this signature object production.
+                 * @return CryptoPrimitiveId::AlgId ID of used hash algorithm only (without signature algorithm specification)
+                 */
+                virtual CryptoPrimitiveId::AlgId GetHashAlgId () const noexcept=0;
+
+                /**
+                 * @brief [SWS_CRYPT_23312]
+                 * Get the hash size required by current signature algorithm.
+                 * @return std::size_t required hash size in bytes
+                 */
+                virtual std::size_t GetRequiredHashSize () const noexcept=0;
             };
         }
     }

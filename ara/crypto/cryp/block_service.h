@@ -20,6 +20,13 @@ namespace ara
             public:
                 
                 /**
+                 * @brief [SWS_CRYPT_29031]
+                 * Unique smart pointer of the interface.
+                 */
+                using Uptr = std::unique_ptr<BlockService>;
+
+
+                /**
                  * @brief [SWS_CRYPT_29035]
                  * Get actual bit-length of an IV loaded to the context.
                  * @param ivUid optional pointer to a buffer for saving an COUID of a
