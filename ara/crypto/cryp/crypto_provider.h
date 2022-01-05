@@ -1,7 +1,22 @@
 #ifndef ARA_CRYPTO_CRYP_CRYPTO_PROVIDER_H
 #define ARA_CRYPTO_CRYP_CRYPTO_PROVIDER_H
 
+#include "ara/crypto/cryp/common/volatile_trusted_container.h"
+#include "ara/crypto/cryp/common/io_interface.h"
+#include "ara/crypto/cryp/common/mem_region.h"
+
 #include "ara/crypto/cryp/cryobj/crypto_primitive_id.h"
+#include "ara/crypto/cryp/cryobj/crypto_object.h"
+#include "ara/crypto/cryp/cryobj/private_key.h"
+#include "ara/crypto/cryp/cryobj/public_key.h"
+#include "ara/crypto/cryp/cryobj/symmetric_key.h"
+#include "ara/crypto/cryp/cryobj/secret_seed.h"
+
+#include "ara/crypto/cryp/symmetric_key_wrapper_ctx.h"
+#include "ara/crypto/cryp/auth_cipher_ctx.h"
+
+#include "ara/core/result.h"
+#include "ara/core/string.h"
 
 namespace ara
 {
