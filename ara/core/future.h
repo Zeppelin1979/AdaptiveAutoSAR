@@ -44,8 +44,8 @@
  * and methods borrowed from the C++ proposal N3857.
  */
 
-#ifndef APD_ARA_CORE_FUTURE_HPP_
-#define APD_ARA_CORE_FUTURE_HPP_
+#ifndef ARA_CORE_FUTURE_H
+#define ARA_CORE_FUTURE_H
 
 #include <chrono>
 #include <future>
@@ -378,4 +378,4 @@ namespace ara
     } // namespace core
 } // namespace ara
 
-#endif // APD_ARA_CORE_FUTURE_HPP_
+#endif // ARA_CORE_FUTURE_H

@@ -41,8 +41,8 @@
  * @brief Interface to class ara::core::map
  */
 
-#ifndef APD_ARA_CORE_MAP_H_
-#define APD_ARA_CORE_MAP_H_
+#ifndef ARA_CORE_MAP_H
+#define ARA_CORE_MAP_H
 
 #include <map>
 #include <memory>
@@ -98,4 +98,4 @@ namespace ara
     } // namespace core
 } // namespace ara
 
-#endif // APD_ARA_CORE_MAP_H_
+#endif // ARA_CORE_MAP_H

@@ -1,5 +1,5 @@
-#ifndef ARA_CRYPTO_SERIALIZABLE_H
-#define ARA_CRYPTO_SERIALIZABLE_H
+#ifndef ARA_CRYPTO_CRYP_COMMON_SERIALIZABLE_H
+#define ARA_CRYPTO_CRYP_COMMON_SERIALIZABLE_H
 
 #include <cinttypes>
 #include "ara/core/result.h"
@@ -84,8 +84,8 @@ namespace ara
              * @exception CryptoErrorDomain::kUnknownIdentifier if an unknown format ID was specified
              * @exception CryptoErrorDomain::kUnsupportedFormat if the specified format ID is not supported for this object type
              */
-            template <typename Alloc = <implementation-defined>>
-            ara::core::Result<ByteVector<Alloc> > ExportPublicly (FormatId formatId=kFormatDefault) const noexcept;
+//            template <typename Alloc = <implementation-defined>>
+//            ara::core::Result<ByteVector<Alloc> > ExportPublicly (FormatId formatId=kFormatDefault) const noexcept;
 
             /**
              * @brief [SWS_CRYPT_10710]
@@ -97,4 +97,4 @@ namespace ara
     }
 }
 
-#endif // ARA_CRYPTO_SERIALIZABLE_H
+#endif // ARA_CRYPTO_CRYP_COMMON_SERIALIZABLE_H

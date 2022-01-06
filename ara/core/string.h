@@ -41,8 +41,8 @@
  * @brief Interface to class ara::core::String
  */
 
-#ifndef APD_ARA_CORE_STRING_H_
-#define APD_ARA_CORE_STRING_H_
+#ifndef ARA_CORE_STRING_H
+#define ARA_CORE_STRING_H
 
 #include "ara/core/string_view.h"
 
@@ -386,4 +386,4 @@ namespace std
 
 } // namespace std
 
-#endif // APD_ARA_CORE_STRING_H_
+#endif // ARA_CORE_STRING_H

@@ -65,7 +65,6 @@
         "typeinfo": "cpp",
         "variant": "cpp",
         "semaphore": "cpp",
-        "*.h": "cpp",
         "csignal": "cpp",
         "any": "cpp",
         "codecvt": "cpp",

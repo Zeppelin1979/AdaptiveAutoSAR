@@ -1,5 +1,5 @@
-#ifndef ARA_CRYPTO_BASE_ID_TYPES_H
-#define ARA_CRYPTO_BASE_ID_TYPES_H
+#ifndef ARA_CRYPTO_CRYP_COMMON_BASE_ID_TYPES_H
+#define ARA_CRYPTO_CRYP_COMMON_BASE_ID_TYPES_H
 
 #include "ara/core/vector.h"
 #include <cinttypes>
@@ -250,4 +250,4 @@ namespace ara
     }
 }
 
-#endif // ARA_CRYPTO_BASE_ID_TYPES_H
+#endif // ARA_CRYPTO_CRYP_COMMON_BASE_ID_TYPES_H

@@ -1,5 +1,5 @@
-#ifndef APD_ARA_CORE_INSTANCE_SPECIFIER_H_
-#define APD_ARA_CORE_INSTANCE_SPECIFIER_H_
+#ifndef ARA_CORE_INSTANCE_SPECIFIER_H
+#define ARA_CORE_INSTANCE_SPECIFIER_H
 
 #include "ara/core/string_view.h"
 #include "ara/core/result.h"
@@ -127,4 +127,4 @@ namespace ara
     }
 }
 
-#endif // APD_ARA_CORE_INSTANCE_SPECIFIER_H_
+#endif // ARA_CORE_INSTANCE_SPECIFIER_H

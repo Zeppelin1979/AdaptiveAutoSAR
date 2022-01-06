@@ -1,5 +1,5 @@
-#ifndef ARA_CRYPTO_UUID_H
-#define ARA_CRYPTO_UUID_H
+#ifndef ARA_CRYPTO_CRYP_COMMON_UUID_H
+#define ARA_CRYPTO_CRYP_COMMON_UUID_H
 
 #include <cinttypes>
 
@@ -141,4 +141,4 @@ namespace ara
     }
 }
 
-#endif // ARA_CRYPTO_UUID_H
+#endif // ARA_CRYPTO_CRYP_COMMON_UUID_H

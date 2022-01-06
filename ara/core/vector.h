@@ -41,8 +41,8 @@
  * @brief Interface to class ara::core::Vector
  */
 
-#ifndef APD_ARA_CORE_VECTOR_H_
-#define APD_ARA_CORE_VECTOR_H_
+#ifndef ARA_CORE_VECTOR_H
+#define ARA_CORE_VECTOR_H
 
 #include <vector>
 #include <memory>
@@ -171,4 +171,4 @@ namespace ara
     } // namespace core
 } // namespace ara
 
-#endif // APD_ARA_CORE_VECTOR_H_
+#endif // ARA_CORE_VECTOR_H

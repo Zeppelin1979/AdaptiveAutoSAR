@@ -1,5 +1,5 @@
-#ifndef ARA_CRYPTO_MEM_REGION_H
-#define ARA_CRYPTO_MEM_REGION_H
+#ifndef ARA_CRYPTO_CRYP_COMMON_MEM_REGION_H
+#define ARA_CRYPTO_CRYP_COMMON_MEM_REGION_H
 
 #include "ara/core/span.h"
 
@@ -21,4 +21,4 @@ namespace ara
     }
 }
 
-#endif // ARA_CRYPTO_MEM_REGION_H
+#endif // ARA_CRYPTO_CRYP_COMMON_MEM_REGION_H

@@ -57,7 +57,7 @@ namespace ara
                  * @param[in] other the other instance
                  * @return UpdatesObserver& *this, containing the contents of other
                  */
-                UpdatesObserver& operator= (const UpdatesObserver &&other)=default;
+                UpdatesObserver& operator= (const UpdatesObserver &&other)/*=default*/;
             };
         }
     }

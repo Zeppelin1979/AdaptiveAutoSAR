@@ -1,5 +1,5 @@
-#ifndef APD_ARA_CORE_ERROR_DOMAIN_H_
-#define APD_ARA_CORE_ERROR_DOMAIN_H_
+#ifndef ARA_CORE_ERROR_DOMAIN_H
+#define ARA_CORE_ERROR_DOMAIN_H
 
 #include "ara/core/error_domain.h"
 #include "ara/core/error_code.h"
@@ -123,10 +123,10 @@ namespace ara
                                                  ErrorDomain::SupportDataType data,
                                                  char const *message) noexcept
         {
-            return ErrorCode(static_cast<ErrorDomain::CodeType>(code), GetCoreDomain(), data, message);
+            return ErrorCode(static_cast<ErrorDomain::CodeType>(code), GetCoreErrorDomain(), data, message);
         }
 
     }
 }
 
-#endif // APD_ARA_CORE_ERROR_DOMAIN_H_
+#endif // ARA_CORE_ERROR_DOMAIN_H

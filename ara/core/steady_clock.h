@@ -1,5 +1,5 @@
-#ifndef APD_ARA_CORE_STEADY_CLOCK_H_
-#define APD_ARA_CORE_STEADY_CLOCK_H_
+#ifndef ARA_CORE_STEADY_CLOCK_H
+#define ARA_CORE_STEADY_CLOCK_H
 #include <chrono>
 #include <cinttypes>
 
@@ -50,4 +50,4 @@ namespace ara
     }
 }
 
-#endif // APD_ARA_CORE_STEADY_CLOCK_H_
+#endif // ARA_CORE_STEADY_CLOCK_H

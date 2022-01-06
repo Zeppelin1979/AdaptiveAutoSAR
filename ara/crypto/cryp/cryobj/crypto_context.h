@@ -1,5 +1,5 @@
-#ifndef ARA_CRYPTO_CRYP_CYPTO_CONTEXT_H
-#define ARA_CRYPTO_CRYP_CYPTO_CONTEXT_H
+#ifndef ARA_CRYPTO_CRYP_CRYOBJ_CRYPTO_CONTEXT_H
+#define ARA_CRYPTO_CRYP_CRYOBJ_CRYPTO_CONTEXT_H
 
 #include "ara/crypto/cryp/common/base_id_types.h"
 #include "ara/crypto/cryp/crypto_provider.h"
@@ -74,4 +74,4 @@ namespace ara
         }
     }
 }
-#endif // ARA_CRYPTO_CRYP_CYPTO_CONTEXT_H
+#endif // ARA_CRYPTO_CRYP_CRYOBJ_CRYPTO_CONTEXT_H

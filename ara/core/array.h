@@ -39,8 +39,8 @@
 /// @file
 /// @brief Interface to class ara::core::array
 
-#ifndef APD_ARA_CORE_ARRAY_H_
-#define APD_ARA_CORE_ARRAY_H_
+#ifndef ARA_CORE_ARRAY_H
+#define ARA_CORE_ARRAY_H
 
 #include <array>
 #include <type_traits>
@@ -82,4 +82,4 @@ namespace ara
     } // namespace core
 } // namespace ara
 
-#endif // APD_ARA_CORE_ARRAY_H_
+#endif // ARA_CORE_ARRAY_H

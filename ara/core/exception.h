@@ -36,8 +36,8 @@
 // The word AUTOSAR and the AUTOSAR logo are registered trademarks.
 // --------------------------------------------------------------------------
 
-#ifndef APD_ARA_CORE_EXCEPTIONS_H
-#define APD_ARA_CORE_EXCEPTIONS_H
+#ifndef ARA_CORE_EXCEPTION_H
+#define ARA_CORE_EXCEPTION_H
 
 #include "ara/core/error_code.h"
 
@@ -79,4 +79,4 @@ namespace ara
     } // namespace core
 } // namespace ara
 
-#endif // APD_ARA_CORE_EXCEPTIONS_H
+#endif // ARA_CORE_EXCEPTION_H

@@ -2,10 +2,12 @@
 #define ARA_CRYPTO_KEYS_KEYSLOT_H
 
 #include "ara/core/result.h"
+
 #include "ara/crypto/cryp/common/io_interface.h"
+#include "ara/crypto/cryp/crypto_provider.h"
+
 #include "ara/crypto/keys/key_slot_content_props.h"
 #include "ara/crypto/keys/key_slot_prototype_props.h"
-#include "ara/crypto/cryp/crypto_provider.h"
 
 namespace ara
 {
@@ -141,10 +143,10 @@ namespace ara
                  * @param other the other instance
                  * @return KeySlot& *this, containing the contents of other
                  */
-                KeySlot& operator= (const KeySlot &&other)=default;
-             }
+                KeySlot& operator= (const KeySlot &&other)/*=default*/;
+            };
         }
     }
 }
 
-#endif //ARA_CRYPTO_KEYS_KEYSLOT_H
+#endif // ARA_CRYPTO_KEYS_KEYSLOT_H

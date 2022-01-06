@@ -1,5 +1,5 @@
-#ifndef ARA_CRYPTO_CRYPTO_ERROR_DOMAIN_H
-#define ARA_CRYPTO_CRYPTO_ERROR_DOMAIN_H
+#ifndef ARA_CRYPTO_CRYP_COMMON_CRYPTO_ERROR_DOMAIN_H
+#define ARA_CRYPTO_CRYP_COMMON_CRYPTO_ERROR_DOMAIN_H
 
 #include "ara/core/error_domain.h"
 #include "ara/core/error_code.h"
@@ -69,7 +69,7 @@ namespace ara
              */
             void ThrowAsException (const ara::core::ErrorCode &errorCode) const override
             {
-                ara::core::ErrorCode::ThrowAsException<Exception>(errorCode);
+                ara::core::ThrowOrTerminate<Exception>(errorCode);
 
             }
                 
@@ -225,4 +225,4 @@ namespace ara
     }
 }
 
-#endif //ARA_CRYPTO_CRYPTO_ERROR_DOMAIN_H
+#endif // ARA_CRYPTO_CRYP_COMMON_CRYPTO_ERROR_DOMAIN_H

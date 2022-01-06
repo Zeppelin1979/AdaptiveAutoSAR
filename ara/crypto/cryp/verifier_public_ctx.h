@@ -1,7 +1,13 @@
 #ifndef ARA_CRYPTO_CRYP_VERIFIER_PUBLIC_CTX_H
 #define ARA_CRYPTO_CRYP_VERIFIER_PUBLIC_CTX_H
 
+#include "ara/crypto/cryp/common/mem_region.h"
+
 #include "ara/crypto/cryp/cryobj/crypto_context.h"
+#include "ara/crypto/cryp/cryobj/signature.h"
+
+#include "ara/crypto/cryp/signature_service.h"
+#include "ara/crypto/cryp/hash_function_ctx.h"
 
 namespace ara
 {

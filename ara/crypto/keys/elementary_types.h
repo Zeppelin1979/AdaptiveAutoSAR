@@ -2,7 +2,9 @@
 #define ARA_CRYPTO_KEYS_ELEMENTARY_TYPES_H
 
 #include <cinttypes>
+
 #include "ara/core/vector.h"
+
 #include "ara/crypto/keys/keyslot.h"
 
 namespace ara

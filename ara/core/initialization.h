@@ -1,3 +1,5 @@
+#ifndef ARA_CORE_INITIALIZATION_H
+#define ARA_CORE_INITIALIZATION_H
 #include "ara/core/result.h"
 
 namespace ara
@@ -31,3 +33,6 @@ namespace ara
         Result<void> Deinitialize () noexcept;
     }
 }
+
+
+#endif // ARA_CORE_INITIALIZATION_H

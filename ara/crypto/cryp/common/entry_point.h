@@ -1,10 +1,17 @@
-#ifndef ARA_CRYPTO_ENTRY_POINT_H
-#define ARA_CRYPTO_ENTRY_POINT_H
+#ifndef ARA_CRYPTO_CRYP_COMMON_ENTRY_POINT_H
+#define ARA_CRYPTO_CRYP_COMMON_ENTRY_POINT_H
+
+#include "ara/core/result.h"
+#include "ara/core/vector.h"
+#include "ara/core/instance_specifier.h"
 
 #include "ara/crypto/cryp/crypto_provider.h"
 //#include "ara/crypto/cryp/key_storage_provider.h"
-#include "ara/core/result.h"
-#include "ara/core/vector.h"
+
+#include "ara/crypto/keys/key_storage_provider.h"
+
+#include "ara/crypto/x509/x509_provider.h"
+
 
 #include <cinttypes>
 
@@ -88,4 +95,4 @@ namespace ara
     }
 }
 
-#endif // ARA_CRYPTO_ENTRY_POINT_H
+#endif // ARA_CRYPTO_CRYP_COMMON_ENTRY_POINT_H

@@ -1,3 +1,6 @@
+#ifndef ARA_CORE_ABORT_H
+#define ARA_CORE_ABORT_H
+
 namespace ara
 {
     namespace core
@@ -37,3 +40,6 @@ namespace ara
         void Abort (const char *text) noexcept;
     }
 }
+
+
+#endif // ARA_CORE_ABORT_H

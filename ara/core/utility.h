@@ -36,8 +36,8 @@
 // The word AUTOSAR and the AUTOSAR logo are registered trademarks.
 // --------------------------------------------------------------------------
 
-#ifndef APD_ARA_CORE_UTILITY_H_
-#define APD_ARA_CORE_UTILITY_H_
+#ifndef ARA_CORE_UTILITY_H
+#define ARA_CORE_UTILITY_H
 
 #include <initializer_list>
 #include <iterator>
@@ -47,6 +47,7 @@ namespace ara
 {
     namespace core
     {
+        using Byte = std::byte;
 
 #if (__cpp_lib_nonmember_container_access - 0) >= 201411
         using std::data;
@@ -183,4 +184,4 @@ namespace ara
     } // namespace core
 } // namespace ara
 
-#endif // APD_ARA_CORE_UTILITY_H_
+#endif // ARA_CORE_UTILITY_H
