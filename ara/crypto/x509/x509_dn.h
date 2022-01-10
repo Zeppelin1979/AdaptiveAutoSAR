@@ -7,7 +7,10 @@
 #include "ara/core/result.h"
 #include "ara/core/string.h"
 
+#include "ara/crypto/cryp/common/crypto_error_domain.h"
+
 #include "ara/crypto/x509/x509_object.h"
+#include "ara/crypto/x509/x509_provider.h"
 
 namespace ara
 {
@@ -21,7 +24,64 @@ namespace ara
              */
             class X509DN : public X509Object
             {
+            private:
+                ara::core::String mCommonName = nullptr;
+                ara::core::String mCountry;            // Country
+                ara::core::String mState;              // State
+                ara::core::String mLocality;           // Locality
+                ara::core::String mOrganization;       // Organization
+                ara::core::vector<ara::core::String> mOrgUnit;            // Organization Unit
+                ara::core::String mStreet;             // Street
+                ara::core::String mPostalCode;         // Postal Code
+                ara::core::String mTitle;              // Title
+                ara::core::String mSurname;            // Surname
+                ara::core::String mGivenName;         // Given Name
+                ara::core::String mInitials;          // Initials
+                ara::core::String mPseudonym;         // Pseudonym
+                ara::core::String mGenerationQualifier;   // Generation Qualifier
+                ara::core::vector<ara::core::String> mDomainComponent;   // Domain Component
+                ara::core::String mDnQualifier;       // Distinguished Name Qualifier
+                ara::core::String mEmail;             // E-mail
+                ara::core::String mUri;               // URI
+                ara::core::String mDns;               // DNS
+                ara::core::String mHostName;          // Host Name (UNSTRUCTUREDNAME)
+                ara::core::String mIpAddress;         // IP Address (UNSTRUCTUREDADDRESS)
+                ara::core::String mSerialNumbers;     // Serial Numbers
+                ara::core::String mUserId;             // User ID
+
             public:
+
+                X509DN (X509Provider &provider, std::size_t capacity=0)
+                : X509Object(provider),
+                  mCommonName(),
+                  mCountry(),
+                  mState(),
+                  mLocality(),
+                  mOrganization(),
+                  mOrgUnit(),
+                  mStreet(),
+                  mPostalCode(),
+                  mTitle(),
+                  mSurname(),
+                  mGivenName(),
+                  mInitials(),
+                  mPseudonym(),
+                  mGenerationQualifier(),
+                  mDomainComponent(),
+                  mDnQualifier(),
+                  mEmail(),
+                  mUri(),
+                  mDns(),
+                  mHostName(),
+                  mIpAddress(),
+                  mSerialNumbers(),
+                  mUserId()
+                {
+                }
+
+                ~X509DN ()
+                {
+                }
 
                 /**
                  * @brief [SWS_CRYPT_40402]
@@ -132,7 +192,15 @@ namespace ara
                  * @exception CryptoErrorDomain::kUnknownIdentifier if the id argument has unsupported value
                  * @exception CryptoErrorDomain::kUnexpectedValue if the attribute string contains incorrect characters or it has unsupported length
                  */
-                virtual ara::core::Result<void> SetAttribute (AttributeId id, ara::core::StringView attribute) noexcept=0;
+                virtual ara::core::Result<void> SetAttribute (AttributeId id, ara::core::StringView attribute) noexcept/*=0;*/
+                {
+                    switch(id)
+                    {
+                        case AttributeId::kCommonName:
+                            mCommonName = attribute;
+                            break;
+                    }
+                }
 
                 /**
                  * @brief [SWS_CRYPT_40416]
