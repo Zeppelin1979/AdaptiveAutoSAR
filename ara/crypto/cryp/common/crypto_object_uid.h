@@ -34,7 +34,10 @@ namespace ara
              * @return true  if this identifier was generated earlier than the anotherId
              * @return false otherwise
              */
-            constexpr bool HasEarlierVersionThan (const CryptoObjectUid &anotherId) const noexcept;
+            constexpr bool HasEarlierVersionThan (const CryptoObjectUid &anotherId) const noexcept
+            {
+                return (mVersionStamp < anotherId.mVersionStamp);
+            }
 
             /**
              * @brief [SWS_CRYPT_10113]
@@ -43,7 +46,10 @@ namespace ara
              * @return true if this identifier was generated later than the anotherId
              * @return false otherwise
              */
-            constexpr bool HasLaterVersionThan (const CryptoObjectUid &anotherId) const noexcept;
+            constexpr bool HasLaterVersionThan (const CryptoObjectUid &anotherId) const noexcept
+            {
+                return (mVersionStamp > anotherId.mVersionStamp);
+            }
 
             /**
              * @brief [SWS_CRYPT_10111]
@@ -52,7 +58,10 @@ namespace ara
              * @return true if both identifiers has common source (identical value of the mGeneratorUid field)
              * @return false otherwise
              */
-            constexpr bool HasSameSourceAs (const CryptoObjectUid &anotherId) const noexcept;
+            constexpr bool HasSameSourceAs (const CryptoObjectUid &anotherId) const noexcept
+            {
+                return (mGeneratorUid == anotherId.mGeneratorUid);
+            }
 
             /**
              * @brief [SWS_CRYPT_10114]
@@ -60,7 +69,10 @@ namespace ara
              * @return true if this identifier is "Nil"
              * @return false otherwise
              */
-            bool IsNil () const noexcept;
+            bool IsNil () const noexcept
+            {
+                return (mVersionStamp == 0u);
+            }
 
             /**
              * @brief [SWS_CRYPT_10115]
@@ -68,7 +80,10 @@ namespace ara
              * @return true if this identifier is "Nil"
              * @return false otherwise
              */
-            bool SourceIsNil () const noexcept;
+            bool SourceIsNil () const noexcept
+            {
+                return (mGeneratorUid.IsNil());
+            }
         };
 
         /**
@@ -78,7 +93,11 @@ namespace ara
          * @param rhs right-hand side operand
          * @return bool true if all members’ values of lhs is equal to rhs, and false otherwise
          */
-        constexpr bool operator== (const CryptoObjectUid &lhs, const CryptoObjectUid &rhs) noexcept;
+        constexpr bool operator== (const CryptoObjectUid &lhs, const CryptoObjectUid &rhs) noexcept
+        {
+            return ((lhs.mGeneratorUid == rhs.mGeneratorUid) &&
+                    (lhs.mVersionStamp == rhs.mVersionStamp));
+        }
 
         /**
          * @brief [SWS_CRYPT_10151]

@@ -68,8 +68,8 @@ namespace ara
                  * @exception CryptoErrorDomain::kInsufficientCapacity if size of the hash buffer is not enough for storing of the result
                  * @exception CryptoErrorDomain::kIncompleteArgState if the hashFunc context is not initialized
                  */
-                template <typename Alloc = <implementation-defined>>
-                ara::core::Result<ByteVector<Alloc> > HashPublicKey (HashFunctionCtx &hashFunc) const noexcept;
+//                template <typename Alloc = <implementation-defined>>
+//                ara::core::Result<ByteVector<Alloc> > HashPublicKey (HashFunctionCtx &hashFunc) const noexcept;
 
             };
         }

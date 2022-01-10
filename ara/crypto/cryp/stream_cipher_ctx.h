@@ -88,8 +88,8 @@ namespace ara
                  * @exception CryptoErrorDomain::kInOutBuffersIntersect if the input and output buffers intersect
                  * @exception CryptoErrorDomain::kProcessingNotStarted if data processing was not started by a call of the Start() method
                  */
-                template <typename Alloc = <implementation-defined>>
-                ara::core::Result<ByteVector<Alloc> > FinishBytes (ReadOnlyMemRegion in) noexcept;
+//                template <typename Alloc = <implementation-defined>>
+//                ara::core::Result<ByteVector<Alloc> > FinishBytes (ReadOnlyMemRegion in) noexcept;
 
                 /**
                  * @brief [SWS_CRYPT_23602]
@@ -183,8 +183,8 @@ namespace ara
                  * @exception CryptoErrorDomain::kInOutBuffersIntersect if the input buffer points inside of the preallocated output container
                  * @exception CryptoErrorDomain::kProcessingNotStarted if data processing was not started by a call of the Start() method
                  */
-                template <typename Alloc = <implementation-defined>>
-                ara::core::Result<ByteVector<Alloc> > ProcessBytes (ReadOnlyMemRegion in) noexcept;
+//                template <typename Alloc = <implementation-defined>>
+//                ara::core::Result<ByteVector<Alloc> > ProcessBytes (ReadOnlyMemRegion in) noexcept;
 
                 /**
                  * @brief [SWS_CRYPT_23627]

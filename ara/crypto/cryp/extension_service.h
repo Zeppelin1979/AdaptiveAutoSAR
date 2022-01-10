@@ -97,7 +97,7 @@ namespace ara
                  * @param other the other instance
                  * @return ExtensionService& *this, containing the contents of other
                  */
-                ExtensionService& operator= (const ExtensionService &&other)=default;
+                ExtensionService& operator= (const ExtensionService &&other)/*=default*/;
 
             };
         }

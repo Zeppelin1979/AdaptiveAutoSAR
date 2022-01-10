@@ -17,7 +17,7 @@ namespace ara
              * of the mAllowedUsage field is bitwise AND of the common usage flags defined at run-time and
              * the usage flags defined by the UserPermissions prototype for current "Actor".
              */
-            struct KeySlotContentProps;
+            struct KeySlotContentProps
             {
                 /**
                  * @brief [SWS_CRYPT_30511]

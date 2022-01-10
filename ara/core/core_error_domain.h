@@ -1,5 +1,5 @@
-#ifndef ARA_CORE_ERROR_DOMAIN_H
-#define ARA_CORE_ERROR_DOMAIN_H
+#ifndef ARA_CORE_CORE_ERROR_DOMAIN_H
+#define ARA_CORE_CORE_ERROR_DOMAIN_H
 
 #include "ara/core/error_domain.h"
 #include "ara/core/error_code.h"
@@ -129,4 +129,4 @@ namespace ara
     }
 }
 
-#endif // ARA_CORE_ERROR_DOMAIN_H
+#endif // ARA_CORE_CORE_ERROR_DOMAIN_H

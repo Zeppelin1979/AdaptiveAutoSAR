@@ -18,8 +18,12 @@ namespace ara
             class X509Object : public Serializable
             {
             private:
-                X509Provider &mProvider;
+                X509Provider & mProvider;
             public:
+
+                X509Object(X509Provider& provider) : mProvider(provider)
+                {
+                }
             
                 /**
                  * @brief [SWS_CRYPT_40911]
@@ -28,6 +32,11 @@ namespace ara
                  * this object
                  */
                 virtual X509Provider& MyProvider () const noexcept=0;
+
+                virtual ~X509Object()
+                {
+
+                }
             };
         }
     }

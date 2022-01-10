@@ -2,6 +2,8 @@
 #define ARA_CRYPTO_KEYS_KEY_STORAGE_PROVIDER_H
 
 #include "ara/crypto/keys/elementary_types.h"
+#include "ara/crypto/keys/updates_observer.h"
+
 #include "ara/core/result.h"
 #include "ara/core/instance_specifier.h"
 
@@ -134,7 +136,7 @@ namespace ara
                  * @param other the other instance
                  * @return KeyStorageProvider& *this, containing the contents of other
                  */
-                KeyStorageProvider& operator= (const KeyStorageProvider &&other)=default;
+                KeyStorageProvider& operator= (const KeyStorageProvider &&other)/*=default*/;
             };
         }
     }

@@ -17,7 +17,7 @@ namespace ara
              * signature (Digital Signature or MAC/HMAC) a COUID of the signature verification key can be
              * obtained by a call of CryptoObject::HasDependence()!
              */
-            class Signature : public ara::crypto::CryptoObject
+            class Signature : public CryptoObject
             {
             public:
 

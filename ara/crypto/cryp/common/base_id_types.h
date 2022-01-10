@@ -68,6 +68,22 @@ namespace ara
         };
 
         /**
+         * @brief [SWS_CRYPT_10019]
+         * Enumeration of cryptographic transformations.
+         */
+        enum class CryptoTransform : std::uint32_t
+        {
+            kEncrypt= 1,            // encryption
+            kDecrypt= 2,            // decryption
+            kMacVerify= 3,          // MAC verification
+            kMacGenerate= 4,        // MAC generation
+            kWrap= 5,               // key wrapping
+            kUnwrap= 6,             // key unwrapping
+            kSigVerify= 7,          // signature verification
+            kSigGenerate= 8         // signature generation
+        };
+
+        /**
          * @brief [SWS_CRYPT_13104]
          * The key/seed can be used for digital signature or MAC/HMAC verification (applicable to
          * symmetric and asymmetric algorithms).

@@ -88,8 +88,8 @@ namespace ara
                  * @exception CryptoErrorDomain::kIncorrectInputSize if the mentioned above rules about the input size is violated
                  * @exception CryptoErrorDomain::kUninitializedContext if the context was not initialized by a key value
                  */
-                template <typename Alloc = <implementation-defined>>
-                ara::core::Result<ByteVector<Alloc> > SignAndEncode (ReadOnlyMemRegion in) const noexcept;
+//                template <typename Alloc = <implementation-defined>>
+//                ara::core::Result<ByteVector<Alloc> > SignAndEncode (ReadOnlyMemRegion in) const noexcept;
 
                 /**
                  * @brief [SWS_CRYPT_23212]

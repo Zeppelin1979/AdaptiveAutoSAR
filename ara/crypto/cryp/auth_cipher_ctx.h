@@ -1,6 +1,7 @@
 #ifndef ARA_CRYPTO_CRYP_AUTH_CIPHER_CTX_H
 #define ARA_CRYPTO_CRYP_AUTH_CIPHER_CTX_H
 
+#include "ara/crypto/cryp/common/base_id_types.h"
 #include "ara/crypto/cryp/cryobj/crypto_context.h"
 #include "ara/crypto/cryp/digest_service.h"
 

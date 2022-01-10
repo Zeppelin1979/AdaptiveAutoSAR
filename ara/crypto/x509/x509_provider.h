@@ -465,7 +465,7 @@ namespace ara
                  * @param other the other instance
                  * @return X509Provider& *this, containing the contents of other
                  */
-                X509Provider& operator= (const X509Provider &&other)=default;
+                X509Provider& operator= (const X509Provider &&other)/*=default*/;
             };
         }
     }

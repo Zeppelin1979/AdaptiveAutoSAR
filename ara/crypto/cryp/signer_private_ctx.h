@@ -114,8 +114,8 @@ namespace ara
                  * @exception CryptoErrorDomain::kInsufficientCapacity if capacity of the output signature container is not enough
                  * @exception CryptoErrorDomain::kUninitializedContext this context was not initialized by a key value
                  */
-                template <typename Alloc = <implementation-defined>>
-                ara::core::Result<ByteVector<Alloc> > Sign (ReadOnlyMemRegion value, ReadOnlyMemRegion context=ReadOnlyMemRegion()) const noexcept;
+//                template <typename Alloc = <implementation-defined>>
+//                ara::core::Result<ByteVector<Alloc> > Sign (ReadOnlyMemRegion value, ReadOnlyMemRegion context=ReadOnlyMemRegion()) const noexcept;
             };
         }
     }

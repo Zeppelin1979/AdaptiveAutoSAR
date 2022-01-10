@@ -1,6 +1,8 @@
 #ifndef ARA_CRYPTO_CRYP_CRYPTO_SERVICE_H
 #define ARA_CRYPTO_CRYP_CRYPTO_SERVICE_H
 
+#include <memory>
+
 #include "ara/crypto/cryp/extension_service.h"
 
 namespace ara

@@ -45,7 +45,7 @@ namespace ara
                  * Destroy the Key Slot object
                  * 
                  */
-                virtual ~KeySlot () noexcept=default;
+                virtual ~KeySlot () noexcept/*=default*/;
 
                 /**
                  * @brief [SWS_CRYPT_30408]
@@ -75,7 +75,7 @@ namespace ara
                  * Get the prototyped properties of the key slot.
                  * @return ara::core::Result<KeySlotPrototypeProps> 
                  */
-                virtual ara::core::Result<KeySlotPrototypeProps> GetPrototypedProps () const noexcept=0;
+                virtual ara::core::Result<KeySlotContentProps> GetPrototypedProps () const noexcept=0;
 
                 /**
                  * @brief [SWS_CRYPT_30404]

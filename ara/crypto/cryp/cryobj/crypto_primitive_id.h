@@ -1,7 +1,9 @@
 #ifndef ARA_CRYPTO_CRYP_CRYOBJ_CRYPTO_PRIMITIVE_ID_H
 #define ARA_CRYPTO_CRYP_CRYOBJ_CRYPTO_PRIMITIVE_ID_H
 
-#include "ara/crypto/cryp/cryobj/crypto_primitive_id.h"
+#include "ara/core/string_view.h"
+
+#include "ara/crypto/cryp/common/base_id_types.h"
 
 namespace ara
 {
@@ -15,6 +17,9 @@ namespace ara
              */
             class CryptoPrimitiveId
             {
+            private:
+                ara::core::StringView mPrimitiveName;
+        
             public:
 
                 /**
@@ -56,7 +61,10 @@ namespace ara
                  * StringView instance should not exceed the life-time of this CryptoPrimitiveId instance!
                  * @return const ara::core::StringView the unified name of the crypto primitive
                  */
-                virtual const ara::core::StringView GetPrimitiveName () const noexcept=0;
+                virtual const ara::core::StringView GetPrimitiveName () const noexcept/*=0;*/
+                {
+                    return mPrimitiveName;
+                }
 
                 /**
                  * @brief [SWS_CRYPT_30212]
@@ -72,7 +80,7 @@ namespace ara
                  * @param other the other instance
                  * @return CryptoPrimitiveId& *this, containing the contents of other
                  */
-                CryptoPrimitiveId& operator= (const CryptoPrimitiveId &&other)=default;
+                CryptoPrimitiveId& operator= (const CryptoPrimitiveId &&other)/*=default*/;
             };
         }
     }

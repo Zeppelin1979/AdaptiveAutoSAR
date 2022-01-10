@@ -60,8 +60,8 @@ namespace ara
                  * @exception CryptoErrorDomain::kInsufficientCapacity if the out.size() is not enough to store the transformation result
                  * @exception CryptoErrorDomain::kUninitializedContext if the context was not initialized by calling SetKey()
                   */
-                template <typename Alloc = <implementation-defined>>
-                ara::core::Result<ByteVector<Alloc> > ProcessBlock (ReadOnlyMemRegion in, bool suppressPadding=false) const noexcept;
+//                template <typename Alloc = <implementation-defined>>
+//                ara::core::Result<ByteVector<Alloc> > ProcessBlock (ReadOnlyMemRegion in, bool suppressPadding=false) const noexcept;
 
                 /**
                  * @brief [SWS_CRYPT_23715]

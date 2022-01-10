@@ -14,6 +14,19 @@
 
 #include "ara/crypto/cryp/symmetric_key_wrapper_ctx.h"
 #include "ara/crypto/cryp/auth_cipher_ctx.h"
+#include "ara/crypto/cryp/decryptor_private_ctx.h"
+#include "ara/crypto/cryp/encryptor_public_ctx.h"
+#include "ara/crypto/cryp/key_agreement_private_ctx.h"
+#include "ara/crypto/cryp/key_decapsulator_private_ctx.h"
+#include "ara/crypto/cryp/key_encapsulator_public_ctx.h"
+#include "ara/crypto/cryp/key_derivation_function_ctx.h"
+#include "ara/crypto/cryp/message_authn_code_ctx.h"
+#include "ara/crypto/cryp/msg_recovery_public_ctx.h"
+#include "ara/crypto/cryp/random_generator_ctx.h"
+#include "ara/crypto/cryp/sig_encode_private_ctx.h"
+#include "ara/crypto/cryp/stream_cipher_ctx.h"
+#include "ara/crypto/cryp/symmetric_block_cipher_ctx.h"
+#include "ara/crypto/cryp/verifier_public_ctx.h"
 
 #include "ara/core/result.h"
 #include "ara/core/string.h"
@@ -151,12 +164,12 @@ namespace ara
                  * @param algId the identifier of target public-private key crypto algorithm
                  * @param allowedUsage the flags that define a list of allowed transformations’ types in which the target key can be used (see constants in scope of RestrictedUseObject)
                  * @param isSession the "session" (or "temporary") attribute for the target key (if true)
-                 * @param Exportable the exportability attribute of the target key (if true)
+                 * @param isExportable the exportability attribute of the target key (if true)
                  * @return ara::core::Result<PrivateKey::Uptrc> smart unique pointer to the created private key object
                  * @exception CryptoErrorDomain::kUnknownIdentifier if algId has an unsupported value
                  * @exception CryptoErrorDomain::kIncompatibleArguments if allowedUsage argument is incompatible with target algorithm algId (note: it is an optional error condition for this method)
                  */
-                virtual ara::core::Result<PrivateKey::Uptrc> GeneratePrivateKey (AlgId algId, AllowedUsageFlags allowedUsage, bool isSession=false, bool is Exportable=false) noexcept=0;
+                virtual ara::core::Result<PrivateKey::Uptrc> GeneratePrivateKey (AlgId algId, AllowedUsageFlags allowedUsage, bool isSession=false, bool isExportable=false) noexcept=0;
 
                 /**
                  * @brief [SWS_CRYPT_20723]
@@ -526,7 +539,7 @@ namespace ara
                  * @param other the other instance
                  * @return CryptoProvider& *this, containing the contents of other
                  */
-                CryptoProvider& operator= (const CryptoProvider &&other)=default;
+                CryptoProvider& operator= (const CryptoProvider &&other)/*=default*/;
             };
         }
     }

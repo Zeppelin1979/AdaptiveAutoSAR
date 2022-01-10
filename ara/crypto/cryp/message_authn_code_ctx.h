@@ -85,8 +85,8 @@ namespace ara
                  * @exception CryptoErrorDomain::kProcessingNotFinished if the digest calculation was not finished by a call of the Finish() method
                  * @exception CryptoErrorDomain::kUsageViolation if the buffered digest belongs to a MAC/HMAC/AE/AEAD context initialized by a key without kAllowSignature permission
                  */
-                template <typename Alloc = <implementation-defined>>
-                ara::core::Result<ByteVector<Alloc> > GetDigest (std::size_t offset=0) const noexcept;
+//                template <typename Alloc = <implementation-defined>>
+//                ara::core::Result<ByteVector<Alloc> > GetDigest (std::size_t offset=0) const noexcept;
 
                 /**
                  * @brief [SWS_CRYPT_22120]
